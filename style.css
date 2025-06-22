@@ -392,6 +392,52 @@ h2{
   transition: background-color 0.2s ease;
 }
 
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 95%; 
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.contact-input{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2b2d31;
+  color: white;
+  border: 1px solid #444;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.contact-textarea{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2b2d31;
+  color: white;
+  border: 1px solid #444;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.submitbtn{
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  align-self: center;
+}
+.submitbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 /** Animation **/
 
 .about {
@@ -641,6 +687,10 @@ h2{
   .card-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .no-decoration{
+    list-style-type: none;
   }
 
   .contact-form{
