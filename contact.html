@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petr Španěl </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="in-line">
+        <div class="container-logo">
+          <img src="images/logo.png" class="logo" alt="Logo">
+          <h1>Web Developer</h1>
+        </div>
+      </a>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="nav-links">
+        <li><a href="index.html" class="web-links">Home</a></li>
+        <li><a href="about.html" class="web-links">About</a></li>
+        <li><a href="contact.html" class="web-links">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="spaceForm"></div>
+<section class="container No-Line" id="contact">
+  <div class="half position no-margin">
+    <h2 class="main-text no-space">Contact</h2>
+    <p class="description">
+      Neváhejte se na mě obrátit! Jsem otevřený projektům na volné noze a spolupráci.
+    </p>
+    <div class="divider"></div>
+    <ul class="description">
+      <li>📧 petronel.spanel@gmail.com</li>
+      <li>📞 +420 734 xxx xxx</li>
+      <li>📍 Uherské Hradiště</li>
+    </ul>
+    <div class="List-of-socials socials-name">
+      <a href="https://www.linkedin.com/in/petr-španěl-a53b7235a/" target="_blank" rel="noopener noreferrer"><img class="socials" src="images/linked-in-transparent.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Flamecz" target="_blank" rel="noopener noreferrer"><img class="socials" src="images/github-mark-white-logo-b1c0.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/spanel.petr/" target="_blank" rel="noopener noreferrer"><img class="socials" src="images/instagram transparent.png" alt="Instagram"></a>
+    </div>
+  </div>
+  <div class="half position">
+    <form id="contact-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 6px; background-color: #2b2d31; color: white; border: 1px solid #444;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 6px; background-color: #2b2d31; color: white; border: 1px solid #444;">
+      <input type="text" name="subject" placeholder="Subject" style="padding: 10px; border-radius: 6px; background-color: #2b2d31; color: white; border: 1px solid #444;">
+      <textarea placeholder="Your Message" name="message" rows="5" required style="padding: 10px; border-radius: 6px; background-color: #2b2d31; color: white; border: 1px solid #444;"></textarea>
+      <button type="submit" class="submitbtn" style="align-self: self-start;">Send Message</button>
+    </form>
+  </div>
+</section>
+  <script src="/scripts/Burgermenu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("shTHN37Sg0Bn1O6Hu");
+  })();
+</script>
+<script src="scripts/email.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petr Španěl</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="in-line">
+        <div class="container-logo">
+          <img src="images/logo.png" class="logo" alt="Logo">
+          <h1>Web Developer</h1>
+        </div>
+      </a>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="nav-links">
+        <li><a href="index.html" class="web-links">Home</a></li>
+        <li><a href="about.html" class="web-links">About</a></li>
+        <li><a href="contact.html" class="web-links">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="container-main-text half">
+        <img src="images/portret.jpg" class="portret" alt="Petr Španěl portrét">
+        <div class="line"></div>
+        <h1 class="bold main-text">I'm Petr Španěl</h1>
+        <p class="description">
+          Jsem začínající Developer, který jde s nadšením do jakéhokoliv projektu. Aktivně se zabývám tvorbou webů a videoher.
+        </p>
+      </div>
+      <div class="half position">
+        <article class="card">
+          <h2>About me</h2>
+          <p>Aktuálně se zabývám rozvojem svých dovedností v oblasti Web Developementu, momentálně se soustředím na framework React.js.</p>
+          <a href="about.html" class="about">Learn More <span class="about-hover">→</span></a>
+        </article>
+        <div class="divider"></div>
+        <article class="card">
+          <h2>Contact</h2>
+          <p>Pokud mi chcete zaslat zprávu, použijte stránku Contact. Vyplňte formulář a zbytek se vyřeší za vás.</p>
+          <a href="contact.html" class="about">Contact Me <span class="about-hover">→</span></a>
+        </article>
+        <div class="divider"></div>
+        <h2 class="socials-name">Follow Me</h2>
+        <div class="List-of-socials">
+          <a href="https://www.linkedin.com/in/petr-španěl-a53b7235a/" target="_blank" rel="noopener noreferrer">
+            <img class="socials" src="images/linked-in-transparent.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Flamecz" target="_blank" rel="noopener noreferrer">
+            <img class="socials" src="images/github-mark-white-logo-b1c0.png" alt="GitHub">
+          </a>
+          <a href="https://www.instagram.com/spanel.petr/" target="_blank" rel="noopener noreferrer">
+            <img class="socials" src="images/instagram transparent.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 id="about" class="skils-text">Skills</h1>
+      <div class="skills">
+        <div class="skill-box">
+          <div class="items">
+            <img src="images/python.png" alt="Python">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="items">
+            <img src="images/javascript.png" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="items">
+            <img src="images/csharp.png" alt="C#">
+            <p>C#</p>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="items">
+            <img src="images/unity.png" alt="Unity">
+            <p>Unity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/scripts/Burgermenu.js"></script>
+</body>
+</html>

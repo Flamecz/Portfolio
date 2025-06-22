@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petr Španěl </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="in-line">
+        <div class="container-logo">
+          <img src="images/logo.png" class="logo" alt="Logo">
+          <h1>Web Developer</h1>
+        </div>
+      </a>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="nav-links">
+        <li><a href="index.html" class="web-links">Home</a></li>
+        <li><a href="about.html" class="web-links">About</a></li>
+        <li><a href="contact.html" class="web-links">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+        <div class="container No-Line">
+            <div class="">
+                <h1 class="main-text no-space">Moje Projekty</h1>
+                <p class="description">Tady jsou nějaké mé projekty, které jsem vytvořil.</p>
+            </div>
+        </div>
+        <div class="about-divider"></div>
+
+        <!-- Projekty -->
+        <section class="projects">
+            <div class="card-container">
+                <div class="project-card">
+                    <img src="images/maturitniProjekt.png" alt="Maturitní projekt" />
+                    <h3>Maturitní Projekt</h3>
+                    <p>Když jsem začal vytvářet nějaké nové projekty, tak jsem za sebou již měl maturitní projekt...</p>
+                    <a class="btn" onclick="openModal('modal1')">Zobrazit projekt</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/webscreen.png" alt="Web Screen" />
+                    <h3>Moje Portfolio</h3>
+                    <p>Jede z mích projektů, který je stále ve vývoji, je moje portfolio...</p>
+                    <a class="btn" onclick="openModal('modal2')">Zobrazit projekt</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>💡Další projekty jsou na cestě</h3>
+                    <p>Aktuálně teď pracuju na E-shopu kde se snažím naučit prací s Firebase, React, mongoDB a další.<br><br>
+                         Dále pracuji na rozvoji svých schopností v C++ pro vývoj aplikací. </p>
+                </div>
+                
+            </div>
+        </section>
+        <div class="about-divider"></div>
+        <!-- Modal -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>Maturitní Projekt</h2>
+                <p>Když jsem začal vytvářet nějaké nové projekty, tak jsem za sebou již měl maturitní projekt. Tenhle projekt se zaměřoval na tvorbu hry. Hra kterou jsem se snažil napodobyt
+                    se jmenuje Heroes of Might and magic 3. Hru jsem vyvíjel v herním enginu Unity, kde jsem se naučil používat C# s tím, že tento moment beru jako odrazový můstek.
+                    mám tento projekt nahraný na svém <a href="https://github.com/Flamecz/schoolV2" target="blank" class="link-maturita">Githubu</a>
+                </p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h2>Moje Portfolio</h2>
+                <p>Jede z mích projektů, který je stále ve vývoji, je moje portfolio, ve kterém se snažím naučit pracovat s novými webovími aplikacemi.<br>
+                     Chtěl bych později celý web přepsat do React.js a TypeScript </p>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/modal.js"></script>
+    <script src="/scripts/Burgermenu.js"></script>
+</body>
+</html>
